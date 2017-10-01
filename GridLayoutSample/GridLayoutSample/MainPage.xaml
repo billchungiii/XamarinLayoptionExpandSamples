@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GridLayoutSample"
+             x:Class="GridLayoutSample.MainPage">
+    <Grid BackgroundColor="Blue" >
+        <Grid.Resources >
+            <ResourceDictionary >
+                <Style TargetType="Label">
+                    <Setter Property="FontSize" Value="19"/>
+                    <Setter Property="Margin" Value="6"/>
+                </Style>
+            </ResourceDictionary>
+        </Grid.Resources>
+        <Grid.RowDefinitions >
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Text="ABC" VerticalOptions="Center" BackgroundColor="Yellow"  />
+        <Label Grid.Row="1" Text="123" VerticalOptions="CenterAndExpand"  BackgroundColor="Green"  />
+        <Label Grid.Row="2" Text="DEF" VerticalOptions="Start"  BackgroundColor="Yellow"  />
+        <Label Grid.Row="3" Text="456" VerticalOptions="StartAndExpand"   BackgroundColor="Green"  />
+        <Label Grid.Row="4" Text="GHI" VerticalOptions="Fill"  BackgroundColor="Yellow"  />
+        <Label Grid.Row="5" Text="789" VerticalOptions="FillAndExpand"    BackgroundColor="Green"  />
+        <Label Grid.Row="6" Text="JKL" VerticalOptions="End"  BackgroundColor="Yellow"  />
+        <Label Grid.Row="7" Text="012" VerticalOptions="EndAndExpand"    BackgroundColor="Green"  />
+    </Grid>
+</ContentPage>

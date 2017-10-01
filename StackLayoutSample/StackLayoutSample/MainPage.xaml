@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:StackLayoutSample"
+             x:Class="StackLayoutSample.MainPage">
+
+    <StackLayout BackgroundColor="Blue" >
+        <StackLayout.Resources >
+            <ResourceDictionary >
+                <Style TargetType="Label">
+                    <Setter Property="FontSize" Value="19"/>
+                    <Setter Property="Margin" Value="6"/>                  
+                </Style>
+            </ResourceDictionary>
+        </StackLayout.Resources>
+        <Label Text="ABC" VerticalOptions="Center" BackgroundColor="Yellow"  />
+        <Label Text="123" VerticalOptions="CenterAndExpand"  BackgroundColor="Green"  />        
+        <Label Text="DEF" VerticalOptions="Start"  BackgroundColor="Yellow"  />
+        <Label Text="456" VerticalOptions="StartAndExpand"   BackgroundColor="Green"  />
+        <Label Text="GHI" VerticalOptions="Fill"  BackgroundColor="Yellow"  />
+        <Label Text="789" VerticalOptions="FillAndExpand"    BackgroundColor="Green"  />
+        <Label Text="JKL" VerticalOptions="End"  BackgroundColor="Yellow"  />
+        <Label Text="012" VerticalOptions="EndAndExpand"    BackgroundColor="Green"  />
+    </StackLayout>
+</ContentPage>
